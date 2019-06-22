@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Météo app JS 🌡️</title>
+    <script src="assets/meteo.js"></script>
+    <link rel="icon" type="img/png" href="img/JavaScript-logo.png" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-transparent mx-auto" style="width : 15vw;">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/JavaScript-logo.png" width="30" height="30" class="d-inline-block align-top" alt="navbar">
+            Javascript cours
+        </a>
+    </nav>
+    <div class="container">
+        <div class="card shadow p-3 bg-white rounded">
+            <h5 class="card-header">Metéo d'aujourd'hui 👀</h5>
+            <div class="card-body .bg-white">
+                <div class="location">
+                    <h1 class="location-habitant"></h1>
+                </div>
+
+                <div class="temparature">
+                    <div class="logodegree">
+                        <h2 class="temperature-degree"></h2>
+                        <span>C° 🌡️</span>
+                    </div>
+                    <div class="logoDescrption">
+                        <div class="description"></div>
+                        <span>💭</span>
+                    </div>
+                    <div class="logoHumidite">
+                        <div class="humidite"></div>
+                        <span>Taux d'humidité 🤭</span>
+                    </div>
+                </div>
+                <a href="index.html" class="btn btn-primary">Revenir à l'accueil 🏠</a>
+                <input type="button" value="🔥🔥" class="btn btn-danger" onClick="document.location.reload(true)">
+                <a href="nasa.html" class="btn btn-warning">🌎</a>
+                <a href="video.html" class="btn btn-info">📹</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

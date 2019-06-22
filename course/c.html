@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>C# 📹</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="../assets/c.js" async></script>
+    <link rel="icon" type="img/png" href="../img/JavaScript-logo.png" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/JavaScript-logo.png" width="30" height="30" class="d-inline-block align-top" alt="navbar">
+            Javascript cours
+        </a>
+    </nav>
+    <div class="container">
+        <div class="card shadow p-3 bg-white rounded">
+            <h5 class="card-header rounded">C#</h5>
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" id="videoFrame" src=""></iframe>
+                </div>
+                <button type="button" class="btn btn-danger mt-2" id="btnPrecedent">Précédent</button>
+                <button type="button" class="btn btn-primary mt-2" id="btnSuivant">Suivant</button>
+                <a href="../index.html" class="btn btn-primary mt-2">Revenir à l'accueil 🏠</a>
+                <a href="../meteo.html" class="btn btn-success mt-2">🌤</a>
+                <a href="../nasa.html" class="btn btn-danger mt-2">🌎</a>
+                <div class="dropup">
+                    <a class="btn btn-secondary dropdown-toggle mt-2" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Voir les autres cours
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="video.html">C# Advanced</a>
+                        <a class="dropdown-item active" href="/course/c.html">C#</a>
+                        <a class="dropdown-item" href="/course/c-intermediate.html">C# Intermediate</a>
+                        <a class="dropdown-item" href="/course/clean-code.html">How to clean your code</a>
+                        <a class="dropdown-item" href="/course/python.html">Python</a>
+                        <a class="dropdown-item" href="/course/sql.html">Sql</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
+    <title>Ip detector 🖧</title>
+    <script src="assets/ipdetector.js"></script>
+    <link rel="icon" type="img/png" href="img/JavaScript-logo.png" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light bg-transparent mx-auto" style="width : 15vw;">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/JavaScript-logo.png" width="30" height="30" class="d-inline-block align-top" alt="navbar">
+                Javascript cours
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="input-group mt-5">
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                placeholder="Rechercher une adresse ip (ex: 77.136.19.117)" id="rechercheform" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" id="recherchebtn">Rechercher</button>
+                <button class="btn btn-outline-info" type="button" id="monIp">Mon IP</button>
+            </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded shadow-sm d-none" id="rechercheDisplay">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Résultat de la recherche :</h6>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark" id="ip" ></strong>
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <img src="" alt="flagPays" id="flagCountry" class="bd-placeholder-img mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark" id="paysName"></strong>
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark" id="fai"></strong>
+                </p>
+            </div>
+            <small class="d-block text-right mt-3">
+                <a href="#">5€ paypal maintenant</a>
+            </small>
+        </div>
+
+        <div class="card text-center rounded shadow-sm rounded mt-4 d-none" id="mapReveal">
+            <div id='map'></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
